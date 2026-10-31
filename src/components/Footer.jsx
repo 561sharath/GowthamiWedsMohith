@@ -51,19 +51,30 @@ export default function Footer() {
           20 · November · 2026 &nbsp;·&nbsp; Gowribidanur, Karnataka
         </motion.p>
 
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={inView ? { opacity: 1 } : {}}
-          transition={{ duration: 0.9, delay: 1.0 }}
-          style={{
-            marginTop: '16px',
-            fontSize: '12px',
-            color: 'rgba(220, 201, 210, 0.85)',
-            letterSpacing: '0.06em',
-          }}
+        <motion.div
+          className="footer-contacts"
+          initial={{ opacity: 0, y: 12 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.9, delay: 0.9 }}
         >
-          📞 <a href="tel:8374020400" style={{ color: 'inherit', textDecoration: 'none' }}>8374020400</a>
-        </motion.p>
+          <span className="contacts-heading">Contact Details</span>
+          <div className="contact-list">
+            <a href="tel:8618411006" className="contact-item">
+              <span className="contact-icon">📞</span>
+              <div className="contact-info">
+                <span className="contact-name">Govardhan Reddy</span>
+                <span className="contact-num">8618411006</span>
+              </div>
+            </a>
+            <a href="tel:8374020400" className="contact-item">
+              <span className="contact-icon">📞</span>
+              <div className="contact-info">
+                <span className="contact-name">Sai Sumanth Reddy</span>
+                <span className="contact-num">8374020400</span>
+              </div>
+            </a>
+          </div>
+        </motion.div>
 
         {/* Floating hearts */}
         {[...Array(5)].map((_, i) => (

@@ -129,11 +129,13 @@ export default function Hero() {
           >
             <p>
               <b>Gowthami N.V.</b>
-              <span>Only Daughter of Smt Sujathamma &amp; Sri N.K. VenkataReddy</span>
+              <span>Only Daughter of</span>
+              <span>Smt. Sujathamma &amp; Sri N.K. VenkataReddy</span>
             </p>
             <p>
-              <b>C Mohith Reddy</b>
-              <span>Elder Son of Smt S.K. Amaravathi &amp; Sri B.K. Venkatesh Reddy</span>
+              <b>C. Mohith Reddy</b>
+              <span>Elder Son of</span>
+              <span>Smt. S.K. Amaravathi &amp; Sri B.K. Venkatesh Reddy</span>
             </p>
           </motion.div>
         </motion.div>
